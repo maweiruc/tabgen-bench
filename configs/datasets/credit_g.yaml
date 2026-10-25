@@ -1,0 +1,46 @@
+id: credit_g
+source:
+  provider: openml
+  data_id: 31
+  version: 1
+  upstream_url: https://www.openml.org/d/31
+  dictionary_url: https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data
+  citation: Hofmann (1994), Statlog German Credit Data, UCI, DOI 10.24432/C5NC77
+  license_note: 'OpenML: Public; UCI source page: CC BY 4.0 (verified 2026-10-25);
+    source data not redistributed'
+target:
+  column: class
+  task: binary_classification
+  positive_label: bad
+  negative_label: good
+schema:
+  definition_path: configs/datasets/schemas/credit_g_v1.yaml
+canonicalization_version: credit_g_v1
+expected_rows: 1000
+mapping:
+  version: 1.0.0
+  raw_target: class
+  features:
+    checking_status: checking_status
+    duration: duration
+    credit_history: credit_history
+    purpose: purpose
+    credit_amount: credit_amount
+    savings_status: savings_status
+    employment: employment
+    installment_commitment: installment_commitment
+    personal_status: personal_status
+    other_parties: other_parties
+    residence_since: residence_since
+    property_magnitude: property_magnitude
+    age: age
+    other_payment_plans: other_payment_plans
+    housing: housing
+    existing_credits: existing_credits
+    job: job
+    num_dependents: num_dependents
+    own_telephone: own_telephone
+    foreign_worker: foreign_worker
+  values: {}
+missing_policy: ARFF ? -> pandas NA; unknown and literal strings remain categories;
+  no imputation

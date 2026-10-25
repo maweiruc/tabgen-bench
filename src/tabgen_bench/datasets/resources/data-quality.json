@@ -1,0 +1,17 @@
+{
+  "adult": {
+    "duplicate_rows_after_first": 52,
+    "validation_rows_with_exact_train_match": 11,
+    "test_rows_with_exact_train_match": 10
+  },
+  "bank_marketing": {
+    "duplicate_rows_after_first": 0,
+    "validation_rows_with_exact_train_match": 0,
+    "test_rows_with_exact_train_match": 0
+  },
+  "credit_g": {
+    "duplicate_rows_after_first": 0,
+    "validation_rows_with_exact_train_match": 0,
+    "test_rows_with_exact_train_match": 0
+  }
+}

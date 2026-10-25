@@ -1,0 +1,10 @@
+plan_config: ../experiments/toy_v1.yaml
+project_root: ../..
+data_root: ../../data
+storage:
+  root: ../../runs/toy-benchmark
+  cache_root: ../../cache/toy-benchmark
+local_datasets:
+- schema: ../../examples/toy/dataset_spec.yaml
+  data: ../../examples/toy/data.csv
+  split: ../../examples/toy/split.json

@@ -1,0 +1,40 @@
+id: adult
+source:
+  provider: openml
+  data_id: 1590
+  version: 2
+  upstream_url: https://www.openml.org/d/1590
+  dictionary_url: https://archive.ics.uci.edu/dataset/2/adult
+  citation: Becker & Kohavi (1996), Adult, UCI, DOI 10.24432/C5XW20
+  license_note: 'OpenML: Public; UCI source page: CC BY 4.0 (verified 2026-10-25);
+    source data not redistributed'
+target:
+  column: class
+  task: binary_classification
+  positive_label: '>50K'
+  negative_label: <=50K
+schema:
+  definition_path: configs/datasets/schemas/adult_v1.yaml
+canonicalization_version: adult_v1
+expected_rows: 48842
+mapping:
+  version: 1.0.0
+  raw_target: class
+  features:
+    age: age
+    workclass: workclass
+    fnlwgt: fnlwgt
+    education: education
+    education-num: education-num
+    marital-status: marital-status
+    occupation: occupation
+    relationship: relationship
+    race: race
+    sex: sex
+    capital-gain: capital-gain
+    capital-loss: capital-loss
+    hours-per-week: hours-per-week
+    native-country: native-country
+  values: {}
+missing_policy: ARFF ? -> pandas NA; unknown and literal strings remain categories;
+  no imputation

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77,<85"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tabgen-bench"
+version = "0.3.0"
+description = "Independent tabular evaluation with pinned datasets and optional SDV adapters"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+  "pandas>=2.2,<3", "pydantic>=2.10,<3", "numpy>=2,<3",
+  "scipy>=1.13,<2", "scikit-learn>=1.5,<2", "pyarrow>=17", "PyYAML>=6,<7",
+  "matplotlib>=3.9,<4",
+]
+
+[project.optional-dependencies]
+sdv = ["sdv==1.38.5"]
+test = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+tabbench = "tabgen_bench.interfaces.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"tabgen_bench.datasets" = ["resources/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+markers = ["sdv: optional SDV integration"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

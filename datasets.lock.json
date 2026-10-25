@@ -1,0 +1,267 @@
+{
+  "lock_version": "1.0.0",
+  "datasets": {
+    "adult": {
+      "source": {
+        "data_id": 1590,
+        "version": 2,
+        "file_id": "1595261",
+        "raw_url": "https://openml.org/data/v1/download/1595261/adult.arff",
+        "raw_target": "class",
+        "raw_md5": "bb6510925e5d4b23d136715febb2cdf5",
+        "openml_license": "Public"
+      },
+      "raw_sha256": "77aa1703717a29f0b5642e94c3ba1defd2486f0b34d4d8eccc1b37a5f7d226b0",
+      "raw_bytes": 5962724,
+      "canonicalization_version": "adult_v1",
+      "config_hash": "4f701ab8ddf8e4ef010b17bd3e51219f6a5c33b606811689f6308b7dd1186ef3",
+      "schema_hash": "200a77ff56889c7bf696a2da9635688eb5440085160a9f112c72e29b981fa732",
+      "generation_schema_hash": "fb85c65f1f460a386864d22fadfe2bee78804026c541655a54dc225c6ce0e73d",
+      "validity_rules_hash": "b5cd2f34d2d47dbb2211d28c7b42fc0a496e14f97e37be67a4dd7bb20d7630e9",
+      "constraint_rules_version": "1.0.0",
+      "normalized_parquet_sha256": "f4e4da3a98d07a7d922b8a5b5b624c3e65332c6f0f231b7c9c9705c2bd76f177",
+      "normalized_content_sha256": "69c3ea9ca559a717312a379868ed04278f7e3a32da16400202360c4770a831f3",
+      "rows": 48842,
+      "columns": [
+        "age",
+        "workclass",
+        "fnlwgt",
+        "education",
+        "education-num",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "capital-gain",
+        "capital-loss",
+        "hours-per-week",
+        "native-country",
+        "class"
+      ],
+      "target_counts": {
+        "<=50K": 37155,
+        ">50K": 11687
+      },
+      "missing_counts": {
+        "age": 0,
+        "workclass": 2799,
+        "fnlwgt": 0,
+        "education": 0,
+        "education-num": 0,
+        "marital-status": 0,
+        "occupation": 2809,
+        "relationship": 0,
+        "race": 0,
+        "sex": 0,
+        "capital-gain": 0,
+        "capital-loss": 0,
+        "hours-per-week": 0,
+        "native-country": 857,
+        "class": 0
+      },
+      "writer": {
+        "pyarrow": "26.0.0",
+        "pandas": "2.3.3",
+        "sklearn_parser": "1.9.1",
+        "parquet_profile": "uncompressed_v1"
+      },
+      "split": {
+        "split_version": "stratified_60_20_20_v1",
+        "seed": 20261025,
+        "n_rows": 48842,
+        "content_hash": "69c3ea9ca559a717312a379868ed04278f7e3a32da16400202360c4770a831f3",
+        "position_hashes": {
+          "train": "93b71aaf729ba71c98a0fc7b5ae7dab3353d8ddca9afa3a20518a61b3d0a75bb",
+          "validation": "fefa68aaa601cacbefd9f2083127174692266b637a579ad821f0f32b4ea8ff9f",
+          "test": "bf09160c97a7c1fc06220391b64594bd2ebf0b3ec14b585ce4a27f1f98f3e9a5"
+        },
+        "counts": {
+          "train": 29305,
+          "validation": 9768,
+          "test": 9769
+        }
+      }
+    },
+    "bank_marketing": {
+      "source": {
+        "data_id": 1461,
+        "version": 1,
+        "file_id": "1586218",
+        "raw_url": "https://openml.org/data/v1/download/1586218/bank-marketing.arff",
+        "raw_target": "Class",
+        "raw_md5": "b29d2eb78e508569fd41172c97bda00e",
+        "openml_license": "Public"
+      },
+      "raw_sha256": "7381f5eec0cfcd20b70e70988ead1cff758fa1e9402e1f800ee8a4b59529e4b2",
+      "raw_bytes": 3660226,
+      "canonicalization_version": "bank_marketing_v1",
+      "config_hash": "38b6f03045bfcc342bfa94ed20b1853f5acdd7e6007e7060691778ad4d79279a",
+      "schema_hash": "947de16ad6fbfad4cfe7bf7e3da6cdaaf0ef42689fde2b53e0f1475fb760a0f2",
+      "generation_schema_hash": "208346e51fba791af63d82638e15e110be57d09467bcbdb2f5d5dbe39266b5f0",
+      "validity_rules_hash": "acf11f5e8286cd7e9ab2165993fb455f1b92713be4f365c800e18a4d3c5f8394",
+      "constraint_rules_version": "1.0.0",
+      "normalized_parquet_sha256": "0573f118426149f01347934ddcafbc2ff69b96bf60f02b9978c8b98e6577c268",
+      "normalized_content_sha256": "9178208614a0e7ab879a524b4415770fc6bc56d3cbe47aab96ddc263c1ac01f1",
+      "rows": 45211,
+      "columns": [
+        "age",
+        "job",
+        "marital",
+        "education",
+        "default",
+        "balance",
+        "housing",
+        "loan",
+        "contact",
+        "day",
+        "month",
+        "duration",
+        "campaign",
+        "pdays",
+        "previous",
+        "poutcome",
+        "y"
+      ],
+      "target_counts": {
+        "no": 39922,
+        "yes": 5289
+      },
+      "missing_counts": {
+        "age": 0,
+        "job": 0,
+        "marital": 0,
+        "education": 0,
+        "default": 0,
+        "balance": 0,
+        "housing": 0,
+        "loan": 0,
+        "contact": 0,
+        "day": 0,
+        "month": 0,
+        "duration": 0,
+        "campaign": 0,
+        "pdays": 0,
+        "previous": 0,
+        "poutcome": 0,
+        "y": 0
+      },
+      "writer": {
+        "pyarrow": "26.0.0",
+        "pandas": "2.3.3",
+        "sklearn_parser": "1.9.1",
+        "parquet_profile": "uncompressed_v1"
+      },
+      "split": {
+        "split_version": "stratified_60_20_20_v1",
+        "seed": 20261025,
+        "n_rows": 45211,
+        "content_hash": "9178208614a0e7ab879a524b4415770fc6bc56d3cbe47aab96ddc263c1ac01f1",
+        "position_hashes": {
+          "train": "a94c3074e1d8ce27bf9a9a18817ddde3fb9aea05acc288d6e145df0c76a42b83",
+          "validation": "611b1a6079f372be5bc2d9d42e33af23dc81c25114f98dd42595fe53d0bb7b32",
+          "test": "ea5a454742012c80c01d49b532b5af276c721ec87a24320fb3d3dbd04e576901"
+        },
+        "counts": {
+          "train": 27126,
+          "validation": 9042,
+          "test": 9043
+        }
+      }
+    },
+    "credit_g": {
+      "source": {
+        "data_id": 31,
+        "version": 1,
+        "file_id": "31",
+        "raw_url": "https://openml.org/data/v1/download/31/credit-g.arff",
+        "raw_target": "class",
+        "raw_md5": "9a475053fed0c26ee95cd4525e50074c",
+        "openml_license": "Public"
+      },
+      "raw_sha256": "768be84ef749110d5fcac109a6541f2df190e8c6987e1dc432c0a4f29d0642f5",
+      "raw_bytes": 162291,
+      "canonicalization_version": "credit_g_v1",
+      "config_hash": "ae6f2b0f81db7ca3646888d97381129624f12f7037ede5eb19de0521a8f1e313",
+      "schema_hash": "0619012fd5dccf61ddc2f5a4f7b2060818d7a4d8a9734878979f6e01eeaf81f2",
+      "generation_schema_hash": "3c3ea78d4268694dbe72c3023bdaccc8b7c0205010612535a73371d8d9239dda",
+      "validity_rules_hash": "1b427b2e2f227a7f3d87ea1305ce1c122cf3236dd4f942ab80ae24a3bdd0daaf",
+      "constraint_rules_version": "1.0.0",
+      "normalized_parquet_sha256": "d64a00ae2139789b2997f83f69f64d463956dcd8a9cea6e9dd4553625c1a9800",
+      "normalized_content_sha256": "75c29876526fcaa475bb3a8e73ee3d7dda20fa260821955c4a7dd9d00b933c4f",
+      "rows": 1000,
+      "columns": [
+        "checking_status",
+        "duration",
+        "credit_history",
+        "purpose",
+        "credit_amount",
+        "savings_status",
+        "employment",
+        "installment_commitment",
+        "personal_status",
+        "other_parties",
+        "residence_since",
+        "property_magnitude",
+        "age",
+        "other_payment_plans",
+        "housing",
+        "existing_credits",
+        "job",
+        "num_dependents",
+        "own_telephone",
+        "foreign_worker",
+        "class"
+      ],
+      "target_counts": {
+        "good": 700,
+        "bad": 300
+      },
+      "missing_counts": {
+        "checking_status": 0,
+        "duration": 0,
+        "credit_history": 0,
+        "purpose": 0,
+        "credit_amount": 0,
+        "savings_status": 0,
+        "employment": 0,
+        "installment_commitment": 0,
+        "personal_status": 0,
+        "other_parties": 0,
+        "residence_since": 0,
+        "property_magnitude": 0,
+        "age": 0,
+        "other_payment_plans": 0,
+        "housing": 0,
+        "existing_credits": 0,
+        "job": 0,
+        "num_dependents": 0,
+        "own_telephone": 0,
+        "foreign_worker": 0,
+        "class": 0
+      },
+      "writer": {
+        "pyarrow": "26.0.0",
+        "pandas": "2.3.3",
+        "sklearn_parser": "1.9.1",
+        "parquet_profile": "uncompressed_v1"
+      },
+      "split": {
+        "split_version": "stratified_60_20_20_v1",
+        "seed": 20261025,
+        "n_rows": 1000,
+        "content_hash": "75c29876526fcaa475bb3a8e73ee3d7dda20fa260821955c4a7dd9d00b933c4f",
+        "position_hashes": {
+          "train": "3a158f223d1a6e6bebed5877cf13607452bc41ea9b10384201850fbf17091a93",
+          "validation": "683f208b5a1b63294e44d51503f07b8d43d950cc2de2acd4e8c6f9d9e73bbbcf",
+          "test": "ed2627310ca7be66e84944918d74ed1b48bbb73a62c3479a8f53d656b650ea1a"
+        },
+        "counts": {
+          "train": 600,
+          "validation": 200,
+          "test": 200
+        }
+      }
+    }
+  }
+}

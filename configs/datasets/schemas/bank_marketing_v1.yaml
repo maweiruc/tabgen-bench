@@ -1,0 +1,202 @@
+schema_version: 1.0.0
+constraint_rules_version: 1.0.0
+columns:
+- name: age
+  role: feature
+  logical_type: integer
+  nullable: false
+  allowed_values: null
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: job
+  role: feature
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - admin.
+  - blue-collar
+  - entrepreneur
+  - housemaid
+  - management
+  - retired
+  - self-employed
+  - services
+  - student
+  - technician
+  - unemployed
+  - unknown
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: marital
+  role: feature
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - divorced
+  - married
+  - single
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: education
+  role: feature
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - primary
+  - secondary
+  - tertiary
+  - unknown
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: default
+  role: feature
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - 'no'
+  - 'yes'
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: balance
+  role: feature
+  logical_type: integer
+  nullable: false
+  allowed_values: null
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: housing
+  role: feature
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - 'no'
+  - 'yes'
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: loan
+  role: feature
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - 'no'
+  - 'yes'
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: contact
+  role: feature
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - cellular
+  - telephone
+  - unknown
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: day
+  role: feature
+  logical_type: integer
+  nullable: false
+  allowed_values: null
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: month
+  role: feature
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - apr
+  - aug
+  - dec
+  - feb
+  - jan
+  - jul
+  - jun
+  - mar
+  - may
+  - nov
+  - oct
+  - sep
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: duration
+  role: feature
+  logical_type: integer
+  nullable: false
+  allowed_values: null
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: campaign
+  role: feature
+  logical_type: integer
+  nullable: false
+  allowed_values: null
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: pdays
+  role: feature
+  logical_type: integer
+  nullable: false
+  allowed_values: null
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: previous
+  role: feature
+  logical_type: integer
+  nullable: false
+  allowed_values: null
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: poutcome
+  role: feature
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - failure
+  - other
+  - success
+  - unknown
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0
+- name: y
+  role: target
+  logical_type: categorical
+  nullable: false
+  allowed_values:
+  - 'no'
+  - 'yes'
+  minimum: null
+  maximum: null
+  constraint_source: 'OpenML 1461 v1 ARFF nominal declaration + UCI dictionary: https://archive.ics.uci.edu/dataset/222/bank+marketing'
+  rule_version: 1.0.0

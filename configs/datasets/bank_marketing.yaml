@@ -1,0 +1,46 @@
+id: bank_marketing
+source:
+  provider: openml
+  data_id: 1461
+  version: 1
+  upstream_url: https://www.openml.org/d/1461
+  dictionary_url: https://archive.ics.uci.edu/dataset/222/bank+marketing
+  citation: Moro, Laureano & Cortez (2011), Bank Direct Marketing, ESM 2011; UCI DOI
+    10.24432/C5K306
+  license_note: 'OpenML: Public; UCI source page: CC BY 4.0 (verified 2026-10-25);
+    source data not redistributed'
+target:
+  column: y
+  task: binary_classification
+  positive_label: 'yes'
+  negative_label: 'no'
+schema:
+  definition_path: configs/datasets/schemas/bank_marketing_v1.yaml
+canonicalization_version: bank_marketing_v1
+expected_rows: 45211
+mapping:
+  version: 1.0.0
+  raw_target: Class
+  features:
+    V1: age
+    V2: job
+    V3: marital
+    V4: education
+    V5: default
+    V6: balance
+    V7: housing
+    V8: loan
+    V9: contact
+    V10: day
+    V11: month
+    V12: duration
+    V13: campaign
+    V14: pdays
+    V15: previous
+    V16: poutcome
+  values:
+    y:
+      '1': 'no'
+      '2': 'yes'
+missing_policy: ARFF ? -> pandas NA; unknown and literal strings remain categories;
+  no imputation

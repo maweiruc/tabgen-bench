@@ -1,0 +1,20 @@
+experiment:
+  name: toy_m4
+  suite: smoke_v1
+  split_seed: 20261025
+  replicate_seeds:
+  - 11
+datasets:
+- offline_toy
+generators:
+- id: bootstrap
+  version: 1.0.0
+  adapter_version: 1.0.0
+  params: {}
+- id: independent_marginal
+  version: 1.0.0
+  adapter_version: 1.0.0
+  params: {}
+sampling:
+  size: train_size
+evaluation_spec: configs/suites/smoke_v1.yaml

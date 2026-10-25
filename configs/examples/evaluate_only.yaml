@@ -1,0 +1,10 @@
+schema: ../../examples/toy/dataset_spec.yaml
+synthetic: ../../examples/toy/synthetic.csv
+train: ../../examples/toy/train.csv
+validation: ../../examples/toy/validation.csv
+test: ../../examples/toy/test.csv
+evaluation_spec: ../suites/smoke_v1.yaml
+seed: 37
+split_seed: 20261025
+expected_n_rows: 96
+output: ../../runs/toy-evaluation

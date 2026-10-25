@@ -1,0 +1,30 @@
+experiment:
+  name: smoke_v1
+  suite: smoke_v1
+  split_seed: 20261025
+  replicate_seeds:
+  - 11
+datasets:
+- credit_g
+generators:
+- id: bootstrap
+  version: 1.0.0
+  adapter_version: 1.0.0
+  params: {}
+- id: independent_marginal
+  version: 1.0.0
+  adapter_version: 1.0.0
+  params: {}
+- id: gaussian_copula
+  version: 1.0.0
+  adapter_version: 1.0.0
+  params:
+    cpu_threads: 1
+    enforce_min_max_values: false
+    enforce_rounding: true
+    default_distribution: beta
+    locales:
+    - en_US
+sampling:
+  size: train_size
+evaluation_spec: configs/suites/smoke_v1.yaml

@@ -1,0 +1,45 @@
+experiment:
+  name: standard_v1
+  suite: standard_v1
+  split_seed: 20261025
+  replicate_seeds:
+  - 11
+  - 23
+  - 37
+  - 53
+  - 71
+datasets:
+- adult
+- bank_marketing
+- credit_g
+generators:
+- id: bootstrap
+  version: 1.0.0
+  adapter_version: 1.0.0
+  params: {}
+- id: independent_marginal
+  version: 1.0.0
+  adapter_version: 1.0.0
+  params: {}
+- id: gaussian_copula
+  version: 1.0.0
+  adapter_version: 1.0.0
+  params:
+    cpu_threads: 1
+    enforce_min_max_values: false
+    enforce_rounding: true
+    default_distribution: beta
+    locales:
+    - en_US
+- id: ctgan
+  version: 1.0.0
+  adapter_version: 1.0.0
+  params:
+    cpu_threads: 1
+    epochs: 100
+    enable_gpu: false
+    enforce_min_max_values: false
+    enforce_rounding: true
+sampling:
+  size: train_size
+evaluation_spec: configs/suites/standard_v1.yaml

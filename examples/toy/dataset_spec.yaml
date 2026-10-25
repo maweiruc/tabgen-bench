@@ -1,0 +1,54 @@
+id: offline_toy
+version: toy_v1
+source:
+  provider: artificial
+  source_id: shipped_toy_v1
+  version: '1'
+  upstream_url: null
+  citation: null
+  license_note: null
+dataset_schema:
+  schema_version: 1.0.0
+  constraint_rules_version: 1.0.0
+  columns:
+  - name: x
+    role: feature
+    logical_type: integer
+    nullable: false
+    missing_representation: pandas_na
+    allowed_values: null
+    minimum: 0
+    maximum: 1000
+    constraint_source: artificial_example_dictionary
+    rule_version: 1.0.0
+  - name: group
+    role: feature
+    logical_type: categorical
+    nullable: false
+    missing_representation: pandas_na
+    allowed_values:
+    - A
+    - B
+    - C
+    - D
+    minimum: null
+    maximum: null
+    constraint_source: artificial_example_dictionary
+    rule_version: 1.0.0
+  - name: label
+    role: target
+    logical_type: boolean
+    nullable: false
+    missing_representation: pandas_na
+    allowed_values: null
+    minimum: null
+    maximum: null
+    constraint_source: explicit_schema
+    rule_version: 1.0.0
+canonicalization_version: toy_v1
+expected_rows: 160
+target:
+  column: label
+  task: binary_classification
+  positive_label: true
+  negative_label: false

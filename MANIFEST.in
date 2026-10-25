@@ -1,0 +1,14 @@
+include README.md LICENSE pyproject.toml datasets.lock.json
+include docs/protocol.md
+recursive-include src/tabgen_bench *.py *.json
+recursive-include configs *.yaml *.json
+recursive-include examples/toy *.csv *.yaml *.json
+recursive-include tests *.py *.csv
+prune build
+prune dist
+prune data
+prune runs
+prune cache
+prune reports
+prune .venv
+global-exclude __pycache__ *.py[cod] .DS_Store
